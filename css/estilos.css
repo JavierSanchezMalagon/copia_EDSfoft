@@ -1,0 +1,362 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+:root{
+    --background-color: #2a8bf4;
+    --color: #2a8bf4;
+}
+
+/*********************Header*********************/
+.header{
+    margin: -64px 0;  /*Respetar los 64px fixed del header*/
+    width: 100%;
+    height: 64px;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 40px 0px;
+    position: fixed;
+    z-index: 1;
+    box-shadow: 0 2px 5px rgba(140, 132, 132, 0.7);
+}
+
+.header__image{
+    position: relative;
+    top: -16px;
+}
+
+.header__nav--link{
+    color: black;
+    padding-left: 35px;
+}
+
+.header__nav--link:hover{
+    color: var(--color);
+}
+
+.fas{
+    position: relative;
+    display: none;
+}
+
+
+/*********************Section1*********************/
+.main{
+    margin-top: 64px;
+}
+
+.main__welcome{
+    width: 100%;
+    min-height: 500px;
+    display: flex;
+    background: var(--color);
+    padding: 25px 40px 0px;
+    
+}
+
+.main__welcome--div{
+    position: relative;
+    top: 118px;
+}
+
+.main__welcome--title{
+    font-size: 50px;
+    color: white;
+    font-family: 'Proxima Nova Rg';
+}
+
+.main__welcome--paragraph{
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.8);
+    padding-top: 22px;
+    padding-bottom: 40px;
+    line-height: 30px;
+}
+
+.main__welcome--button{
+    font-size: 18px;
+    cursor: pointer;
+    padding: 16px 26px;
+    font-size: 16px;
+    background-color: white;
+    color: var(--color);
+    border-radius: 20px;
+}
+
+.main__welcome--img{
+    width: 40%;
+}
+
+
+/*********************Section2*********************/
+.main__services{
+    width: 100%;
+    height: 520px;
+    text-align: center;
+}
+
+.main__services--title{
+    padding-top: 130px;
+    padding-bottom: 30px;
+}
+
+.main__services--article{
+    display: flex;
+    padding: 25px 40px 0px;
+}
+
+.services__article{
+    padding: 20px;
+}
+
+
+/*********************Section3*********************/
+.main__about{
+    width: 100%;
+    height: 292px;
+    background-color: var(--background-color);
+    text-align: center;
+    padding: 65px;
+}
+
+.main__about--title{
+    font-size: 32px;
+    color: white;
+}
+
+.main__about--paragraph{
+    font-size: 16px;
+    color: white;
+    padding: 38px;
+}
+
+.main__about--bottom{
+    font-size: 16px;
+}
+
+.main__about--link{
+    text-decoration: none;
+    color: white;
+    padding: 12px 20px;
+    border: 1px solid white;
+    border-radius: 25px;
+}
+
+.main__about--link:hover{
+    background-color: white;
+    color: var(--color);
+}
+
+
+/*********************Section4*********************/
+.main__projects{
+    width: 100%;
+    height: 500px;
+    padding: 80px 40px;
+}
+
+.main__projects--title{
+    text-align: center;
+    font-size: 32px;
+}
+
+.main__projects--div{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 64px;
+}
+
+.main__projects--image{
+    width: 22%;
+    border-radius: 12px;
+}
+
+.main__projects--image:hover{
+    background-color: rgba(71, 114, 255, 0.8);
+}
+
+
+/*********************Section5*********************/
+.main__job{
+    width: 100%;
+    height: 300px;
+    text-align: center;
+}
+
+.main__job--title{
+    margin-top: 54px;
+    margin-bottom: 24px;
+    font-size: 32px;
+
+}
+
+.main__job--paragraph{
+    margin-bottom: 36px;
+}
+
+.main__job--buttom{ 
+    margin-bottom: 24px;
+}
+
+.main__job--link{
+    background-color: var(--background-color);
+    color: white;
+    font-size: 16px;
+    border-radius: 25px;
+    padding: 12px 20px;  
+    margin: 32px;
+}
+
+.main__job--link:hover{
+    background-color:rgba(0, 56, 238, 0.8);
+}
+
+.main__social--link{
+    text-decoration: none;
+    color:rgba(72, 72, 72, 0.8);
+}
+
+.fab{
+    padding: 18px;
+}
+
+.fab:hover{
+    color: var(--color);
+}
+
+
+/*********************Footer*********************/
+.footer{
+    width: 100%;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__paragraph{
+    font-size: 14px;
+    color: #676F73;
+}
+
+
+
+
+@media (min-width: 320px) and (max-width:1024px)
+{
+    /********HEADER********/
+    .header__nav{
+        display: none;   /*esconder el nav de navegación*/
+    }
+
+    /********MAIN-WELCOME********/
+    .main__welcome{
+        flex-direction: column;
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .main__welcome--div{
+        position: relative;
+        top: -5px;
+    }
+
+    .main__welcome--paragraph{
+        font-size: 16px;
+    }
+
+    .main__welcome--title{
+        font-size: 32px;
+    }
+
+    .main__welcome--button{
+        position: relative;
+        top: -30px;
+    }
+
+    .main__welcome--img{
+        width: 80%;
+        margin: 20px auto;
+    }
+
+    /********MAIN-SERVICES********/
+    .main__services{
+        height: auto;
+    }
+
+    .main__services--title{
+        font-size: 24px;
+        padding-top: 65px;
+        padding-bottom: 5px;
+        margin-top: -10px;
+    }
+
+    .main__services--article{
+        font-size: 14px;
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
+
+     /********MAIN-ABOUT********/
+     .main__about{
+        height: 190px;
+        font-size: 14px;
+        padding-top: 30px;
+    }
+    
+    .main__about--title{
+        font-size: 24px;
+    }
+
+    .main__about--paragraph{
+        margin-top: -20px;
+    }
+    
+    /********MAIN-PROJECT********/
+    .main__projects{
+        height: auto;
+    }
+
+    .main__projects--title{
+        margin-top: -30px;
+        margin-bottom: -50px;
+        font-size: 24px;
+    }
+
+    .main__projects--div{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main__projects--image{
+        width: 98%;
+        margin-top: 30px;
+    }
+
+    /********MAIN-JOB********/
+    .main__job{
+        margin: auto;
+        font-size: 14px;
+        padding: 5px;
+        margin-top: -60px;
+    }
+    
+    .main__job--title{
+        font-size: 24px;
+    }
+     
+    /********FOOTER********/
+    .footer{
+        margin: auto;
+    }
+
+    .footer__paragraph{
+        font-size: 12px;
+    }
+
+}
